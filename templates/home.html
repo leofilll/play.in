@@ -1,0 +1,44 @@
+<ion-view view-title="Home">
+  <div class="bar-app bar-subheader item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search" placeholder="O que deseja pesquisar?">
+    </label>
+    <button class="bar-app button">
+      Procurar
+    </button>
+  </div>
+  <ion-content class="has-subheader">
+    
+    <!--Carrossel-->
+    
+    <ion-slides  options="options" slider="data.slider" style="height:220px">
+      <ion-slide-page>
+        <div class="box blue" style="background:blue; height:220px"><h1>Slide 1</h1></div>
+      </ion-slide-page>
+      <ion-slide-page>
+        <div class="box yellow" style="background: yellow; height:220px"><h1>Slide 2</h1></div>
+      </ion-slide-page>
+    </ion-slides>
+    
+    <!--Card = Produtos Novos-->
+    
+    <div style="padding:10px 0 0 10px">
+      <h3>Produtos Novos</h3>
+    </div>
+    
+    <div class="list">
+
+        <a class="item item-thumbnail-left" href="#" ng-repeat="p in produtos">
+           <img ng-src="{{p.imagem}}">
+            <h2>{{p.banda}}</h2>
+            <p>{{p.album}}</p>
+            <p>{{p.moeda}} {{p.preco}}</p>
+          </a>
+      
+          ...
+      
+      </div>
+  
+  </ion-content>
+</ion-view>

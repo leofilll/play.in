@@ -1,0 +1,42 @@
+/* Empty. Add your own CSS if you like */
+.bar-app{
+    background: black;
+    color: #febf18;
+}
+
+.bar.bar-app button{
+    color: #febf18;
+}
+ion-content{
+    background: black;
+}
+ion-content h3{
+    color: #febf18;
+}
+ion-content .list a.item{
+    background: black;
+    color: white;
+    border: none;
+}
+ion-content .list a.item h2{
+    font-size:20px;
+    padding: 10px 0 5px 0;
+}
+ion-content ion-list .list ion-list{
+    border:none;
+}
+ion-content .list a.item h2,
+ion-content .list a.item p{
+    background: black;
+    color: white;
+}
+ion-content ion-list .list ion-item a.item-content{
+    background: black;
+    color: #febf18;
+    border-color:#111111;
+}
+ion-content ion-list .list ion-item .item.item-divider{
+    background: white;
+    color: #222222;
+    border: none;
+}

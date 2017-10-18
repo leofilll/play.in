@@ -1,0 +1,68 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-app">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content>
+      <ion-list>
+          <ion-item menu-close href="#/app/home" class="item-icon-left">
+            <i class="icon ion-home"></i>
+            Início
+          </ion-item>
+          <div class="item item-divider">
+              Acesse Aqui
+           </div> 
+        <ion-item menu-close ng-click="login()" class="item-icon-left">
+          <i class="icon ion-person"></i>
+          Login
+        </ion-item>
+        <ion-item menu-close href="#/app/categories" class="item-icon-left">
+          <i class="icon ion-android-apps"></i>
+          Categorias
+        </ion-item>
+        <ion-item menu-close href="#/app/cart" class="item-icon-left">
+          <i class="icon ion-android-cart"></i>
+          Carrinho
+        </ion-item>
+        <div class="item item-divider">
+            O que você já comprou
+         </div> 
+        <ion-item menu-close href="#/app/pay" class="item-icon-left">
+          <i class="icon ion-card"></i>
+          Pagamento
+        </ion-item>
+        <div class="item item-divider">
+            Veja sua Pontuação Aqui
+         </div> 
+        <ion-item menu-close href="#/app/club" class="item-icon-left">
+          <i class="icon ion-ios-pricetags"></i> 
+          Clube de Desconto
+          </ion-item>
+          <div class="item item-divider">
+             Quer Ajuda?
+          </div>          
+          <ion-item menu-close href="#/app/faq" class="item-icon-left">
+              <i class="icon ion-help-circled"></i>
+            Perguntas Frequentes
+          </ion-item>
+          <ion-item menu-close href="#/app/help" class="item-icon-left">
+              <i class="icon ion-alert"></i>
+            Ajuda
+        </ion-item>
+        <ion-item menu-close href="#/app/support" class="item-icon-left">
+            <i class="icon ion-help-buoy"></i>
+          Suporte
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
